@@ -8,19 +8,23 @@ import vercel from '@astrojs/vercel';
 export default defineConfig({
   integrations: [
       starlight({
-          title: 'My Docs',
-          social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+          title: 'ECSX 帮助文档',
+          social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Enigfrank/ElectronClassScheduleX' }],
           sidebar: [
               {
-                  label: 'Guides',
+                  label: '文档',
                   items: [
-                      // Each item here is one entry in the navigation menu.
-                      { label: 'Example Guide', slug: 'guides/example' },
+                      { label: '帮助文档首页', slug: 'index' },
                   ],
               },
               {
-                  label: 'Reference',
-                  autogenerate: { directory: 'reference' },
+                  label: 'ECSX',
+                  items: [
+                      { label: '快速入门', slug: 'ecs/quickstart' },
+                      { label: '课表配置教程', slug: 'ecs/setschedule' },
+                      { label: '功能介绍', slug: 'ecs/functionintroduction' },
+                      { label: '软件更新', slug: 'ecs/update' },
+                  ],
               },
           ],
       }),
