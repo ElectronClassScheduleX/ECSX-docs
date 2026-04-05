@@ -3,7 +3,8 @@ title: ECSX帮助文档
 description: ECSX 软件使用教程与常见问题。
 template: splash
 hero:
-  tagline: 你可以在这里找到软件的详细使用教程，本文档会随着版本更新而持续更新。
+  title: ECSX 文档中心
+  tagline: 面向教师与学生的课程管理指南，覆盖安装、课表配置、功能说明与版本更新，帮助你快速上手并稳定使用。
   actions:
     - text: 开始阅读
       link: /ecs/quickstart/
@@ -14,8 +15,25 @@ hero:
       variant: minimal
 ---
 
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 快速导航
+
+<CardGrid stagger>
+  <Card title="快速入门" icon="rocket">从下载安装到首次启动，按步骤完成最短配置路径。</Card>
+  <Card title="课表配置教程" icon="setting">学习如何导入、编辑、切换课表，并建立更高效的排课流程。</Card>
+  <Card title="功能介绍" icon="open-book">了解 ECSX 常用能力与使用场景，快速定位你需要的功能。</Card>
+  <Card title="软件更新" icon="star">查看版本变化与更新说明，及时掌握新特性和修复项。</Card>
+</CardGrid>
+
 ## 使用说明
 
 - 建议先阅读 [快速入门](/ecs/quickstart/) 完成安装。
 - 完成安装后按顺序阅读 [课表配置教程](/ecs/setschedule/) 与 [功能介绍](/ecs/functionintroduction/)。
 - 版本更新信息请查看 [软件更新](/ecs/update/)。
+
+## 学习路径建议
+
+1. **10 分钟启动**：完成安装并确认软件可以正常打开。
+2. **30 分钟配置**：按教程配置课表与基础参数，形成可用环境。
+3. **按需深入**：根据实际需求重点阅读功能介绍与更新说明。

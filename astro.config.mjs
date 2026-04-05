@@ -9,6 +9,7 @@ export default defineConfig({
   integrations: [
       starlight({
           title: 'ECSX 帮助文档',
+          customCss: ['./src/styles/custom.css'],
           social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Enigfrank/ElectronClassScheduleX' }],
           sidebar: [
               {
