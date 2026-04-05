@@ -28,6 +28,12 @@ export default defineConfig({
                   ],
               },
           ],
+          head: [
+            {
+              tag: 'script',
+              attrs: { src: '/scripts/ui-effects.js', defer: true },
+            },
+          ],
       }),
 	],
 
